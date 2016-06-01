@@ -150,7 +150,7 @@ var Keychain = {
 
 function convertError(err) {
   if (Platform.OS === 'android') {
-      return new Error(err);
+      return err;
   }
   if (!err) {
     return null;
